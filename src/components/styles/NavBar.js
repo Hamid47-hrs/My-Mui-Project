@@ -20,13 +20,13 @@ const useStyle = makeStyles((theme) => ({
   search: {
     display: "flex",
     border: "1px solid",
-    borderColor: theme.palette.primary.default,
+    borderColor: theme.blueStyle.default,
     borderRadius: theme.shape.borderRadius,
-    backgroundColor: theme.palette.primary.subsidiary,
+    backgroundColor: theme.blueStyle.secondary,
     padding: "0.05rem 0.3rem",
     marginRight: theme.spacing(1),
     "&:hover": {
-      backgroundColor: theme.palette.primary.default,
+      backgroundColor: theme.blueStyle.default,
     },
     [theme.breakpoints.down("xs")]: {
       display: (props) => (props.open ? "flex" : "none"),
@@ -45,6 +45,9 @@ const useStyle = makeStyles((theme) => ({
     },
     [theme.breakpoints.up("xs")]: {
       display: "none",
+    },
+    "&:hover": {
+      color: theme.blueStyle.default,
     },
   },
   icons: {
