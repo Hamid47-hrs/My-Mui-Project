@@ -4,6 +4,8 @@ const useStyle = makeStyles((theme) => ({
   contianer: {
     paddingTop: "1rem",
     height: "100vh",
+    position: "sticky",
+    top: 0,
     backgroundColor: theme.common.main,
     color: theme.text.grey,
     [theme.breakpoints.down("xs")]: {
@@ -17,6 +19,9 @@ const useStyle = makeStyles((theme) => ({
     width: "100%",
     alignItems: "center",
     marginBottom: theme.spacing(3),
+    [theme.breakpoints.down("xs")]: {
+      justifyContent: "center",
+    },
     "&:hover": {
       cursor: "pointer",
       color: theme.yellowStyle.secondary,
