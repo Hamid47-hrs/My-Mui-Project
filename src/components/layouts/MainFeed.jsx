@@ -1,11 +1,11 @@
 import * as React from "react";
-import { styled } from "@mui/material/styles";
+import { Container } from "@material-ui/core";
 
 
-export default function Main() {
+export default function MainFeed() {
   return (
-    <React.Fragment>
-
-    </React.Fragment>
+    <Container>
+      The Main Content Goes Here.
+    </Container>
   );
 }
