@@ -14,7 +14,7 @@ export default function PostFeed() {
         />
         <CardContent>
             <Typography gutterBottom variant="h5">پست اول</Typography>
-            <Typography variant="body">این متن برای اولین پست تهیه شده و ارزش قانونی دیگری ندارد.</Typography>
+            <Typography variant="body1">این متن برای اولین پست تهیه شده و ارزش قانونی دیگری ندارد.</Typography>
         </CardContent>
         <CardActions>
             <Button size="small" className={classes.button}>بیشتر بخوانید</Button>
