@@ -6,6 +6,7 @@ import NavBar from "./components/layouts/NavBar";
 import LeftBar from "./components/layouts/LeftBar";
 import RightBar from "./components/layouts/RightBar";
 import MainFeed from "./components/layouts/MainFeed";
+import ToolTip from "./components/layouts/ToolTip";
 
 const useStyle = makeStyles((theme) => ({
   hidden: {
@@ -31,6 +32,7 @@ export default function App() {
             <LeftBar />
           </Grid>
         </Grid>
+        <ToolTip />
       </ThemeProvider>
     </React.Fragment>
   );
