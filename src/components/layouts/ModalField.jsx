@@ -10,10 +10,13 @@ import {
 } from "@material-ui/core";
 import useStyle from "../styles/ModalField";
 
-export default function ModalField() {
+export default function ModalField(props) {
   const classes = useStyle();
   const [value, setValue] = useState("");
-  
+  const closeModal = (event, par) => {
+    event.closeFunc(false);
+    par ? event.openFunc() : console.log("null");
+  };
   return (
     <form className={classes.form}>
       <div>
@@ -75,13 +78,19 @@ export default function ModalField() {
         </RadioGroup>
       </div>
       <div className={classes.buttons}>
-        <Button variant="outlined" color="primary" className={classes.button}>
+        <Button
+          variant="outlined"
+          color="primary"
+          className={classes.button}
+          onClick={() => closeModal(props, true)}
+        >
           ارسال پست
         </Button>
         <Button
           variant="outlined"
           color="secondary"
           className={classes.button}
+          onClick={() => closeModal(props, false)}
         >
           انصراف
         </Button>
