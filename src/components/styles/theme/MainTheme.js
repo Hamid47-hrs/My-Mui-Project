@@ -13,6 +13,7 @@ const MainTheme = createTheme({
     main: blue[600],
     secondary: blue[700],
     default: blue[300],
+    lightBlue: blue[100],
   },
   redStyle: {
     main: red[500],
