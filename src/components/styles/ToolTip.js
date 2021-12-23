@@ -24,6 +24,18 @@ const useStyle = makeStyles((theme) => ({
       height: "90vh",
     },
   },
+  alert: {
+    display: "flex",
+    padding: "0.5rem 1rem",
+    alignItems: "center",
+    backgroundColor: theme.greenStyle.main,
+    borderRadius: "4px",
+    boxShadow: "4px 4px 10px #000",
+  },
+  done: {
+    marginLeft: theme.spacing(1),
+    color: theme.text.white,
+  },
 }));
 
 export default useStyle;
